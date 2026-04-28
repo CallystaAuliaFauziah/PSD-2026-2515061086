@@ -15,7 +15,7 @@ Pada baris 28 sampai baris 32 terdapat fungsi display yang berfungsi untuk menam
 Pada baris 34 terdapat variabel riwayat yang berupa list kosong. Variabel ini disiapkan untuk menyimpan data tambahan seperti Riwayat.
 
 <img width="856" height="880" alt="Screenshot 2026-04-28 183336" src="https://github.com/user-attachments/assets/7bcfc832-e70a-4f56-bc12-b18ec94b64cb" />
-Pada baris 36 sampai baris 43 terdapat fungsi menu() yang digunakan untuk menampilkan daftar pilihan kepada pengguna. 
+Berdasarkan gambar tersebut, Pada baris 36 sampai baris 43 terdapat fungsi menu() yang digunakan untuk menampilkan daftar pilihan kepada pengguna. 
 Pada baris 45 terdapat pembuatan objek keranjang = LinkedList(). 
 Pada baris 46 terdapat perulangan while True: yang berarti program akan terus berjalan tanpa batas sampai ada perintah untuk berhenti. 
 Pada baris 48 pengguna diminta memasukkan pilihan melalui input yang disimpan ke variabel pilih.
@@ -24,7 +24,7 @@ Pada baris 57 sampai baris 66 merupakan kondisi elif pilih == "2" untuk menambah
 Pada baris 68 sampai baris 72 merupakan kondisi elif pilih == "3" untuk menghapus barang dari keranjang. 
 
 <img width="728" height="330" alt="Screenshot 2026-04-28 183454" src="https://github.com/user-attachments/assets/15a560ee-e43d-4d36-8003-388a2ec010ea" />
-Pada baris 73 sampai baris 75 merupakan kondisi elif pilih == "4" yang dijalankan ketika pengguna memilih menu untuk menampilkan isi keranjang. 
+Berdasarkan gambar tersebut, Pada baris 73 sampai baris 75 merupakan kondisi elif pilih == "4" yang dijalankan ketika pengguna memilih menu untuk menampilkan isi keranjang. 
 Pada baris 77 sampai baris 78 merupakan kondisi elif pilih == "5" yang digunakan untuk menampilkan riwayat. 
 Pada baris 80 sampai baris 82 merupakan kondisi elif pilih == "6" yang berfungsi untuk mengakhiri program. 
 Pada baris 84 sampai baris 85 terdapat kondisi else yang akan dijalankan jika input pengguna tidak sesuai dengan pilihan menu yang tersedia. 
