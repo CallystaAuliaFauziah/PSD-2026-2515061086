@@ -1,0 +1,43 @@
+def tukar(arr, i, j):
+    temp = arr[i]
+    arr[i] = arr[j]
+    arr[j] = temp
+
+def bubble_sort(arr, n):
+    for i in range(n - 1):
+        ada_tukar = False
+        for j in range(n - i - 1):
+            if arr[j] < arr[j + 1]:
+                tukar(arr, j, j + 1)
+                ada_tukar = True
+        if not ada_tukar:
+            break
+
+def main():
+    try:
+        n = int(input("Masukkan jumlah pemain: "))
+    except ValueError:
+        print("Input tidak valid!")
+        return
+    skor = []
+    print("Masukkan skor pemain:")
+    for i in range(n):
+        while True:
+            try:
+                nilai = int(input(f"Skor pemain ke-{i+1}: "))
+                skor.append(nilai)
+                break
+            except ValueError:
+                print("Masukkan angka yang benar!")
+
+    print("Skor sebelum diurutkan:", skor)
+
+    bubble_sort(skor, n)
+
+    print("Leaderboard (skor tertinggi ke terendah):")
+    for i in range(n):
+        print(f"Peringkat {i+1}: {skor[i]}")
+
+
+if __name__ == "__main__":
+    main()
