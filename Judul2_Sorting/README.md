@@ -2,7 +2,7 @@ Tugas Akhir Percobaan 2
 
 Judul Program: Pengurutan Skor Game Menggunakan Bubble Sort
 
-Program Pengurutan Skor Game Menggunakan Bubble Sort digunakan untuk mengelola data skor pemain dalam sebuah game agar tersusun rapi dalam bentuk leaderboard. Program ini menerima input berupa jumlah pemain dan skor masing-masing pemain. Data skor yang awalnya tidak berurutan kemudian diproses menggynakan algoritma Bubble Sort, yaitu dengan cara membandingkan dua elemen yang berdekatan dan menukarnya jika urutannya tidak sesuai. Proses ini dilakukan berulang hingga seluruh data tersusun dengan benar. Pada program ini, pengurutan dilakukan secara descending, sehingga skor tertinggi berada di posisi teratas. Hasil akhirnya ditampilkan dalam bentuk peringkat pemain, mulai dari skor tertinggi hingga terendah, sehingga memudahkan dalam mengetahui pemain dengan skor terbaik.
+Program Pengurutan Skor Game Menggunakan Bubble Sort digunakan untuk mengelola data skor pemain dalam sebuah game agar tersusun rapi dalam bentuk leaderboard. Program ini menerima input berupa jumlah pemain dan skor masing-masing pemain. Data skor yang awalnya tidak berurutan kemudian diproses menggunakan algoritma Bubble Sort, yaitu dengan cara membandingkan dua elemen yang berdekatan dan menukarnya jika urutannya tidak sesuai. Proses ini dilakukan berulang hingga seluruh data tersusun dengan benar. Pada program ini, pengurutan dilakukan secara descending, sehingga skor tertinggi berada di posisi teratas. Hasil akhirnya ditampilkan dalam bentuk peringkat pemain, mulai dari skor tertinggi hingga terendah, sehingga memudahkan dalam mengetahui pemain dengan skor terbaik.
 
 Source Code:
 <img width="1248" height="1926" alt="coding judul 2 sd" src="https://github.com/user-attachments/assets/22221811-17a5-4fdb-afd3-b9fbab1ef383" />
@@ -46,3 +46,4 @@ Output akhir
 <img width="675" height="257" alt="Screenshot 2026-05-05 005455" src="https://github.com/user-attachments/assets/63b51010-6689-4bb9-870b-b4698d7be006" />
 
 Link youtube presentasi:
+https://youtu.be/jFvsorwSm5A
