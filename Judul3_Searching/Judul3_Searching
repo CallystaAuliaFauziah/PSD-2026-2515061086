@@ -1,0 +1,51 @@
+def binary_search(tanggal, n, target):
+    l = 0
+    r = n - 1
+    pos = -1
+    while l <= r:
+        m = l + (r - l) // 2
+        print(f"Tanggal tengah: {tanggal[m]}")
+        if tanggal[m] == target:
+            pos = m
+            break
+        elif tanggal[m] < target:
+            print("Mencari tanggal setelahnya")
+            l = m + 1
+        else:
+            print("Mencari tanggal sebelumnya")
+            r = m - 1
+    return pos
+
+
+def main():
+    try:
+        n = int(input("Masukkan jumlah tanggal tersedia: "))
+    except ValueError:
+        print("Input tidak valid!")
+        return
+    tanggal = []
+    print("Masukkan tanggal (urut naik):")
+    for i in range(n):
+        while True:
+            try:
+                tgl = int(input())
+                tanggal.append(tgl)
+                break
+            except ValueError:
+                print("Harus berupa angka!")
+    print(f"Daftar tanggal tersedia: {tanggal}")
+    while True:
+        try:
+            target = int(input("Masukkan tanggal yang ingin dicek: "))
+            break
+        except ValueError:
+            print("Harus berupa angka!")
+    pos = binary_search(tanggal, n, target)
+    if pos != -1:
+        print(f"Tanggal {target} tersedia, tiket stadion bisa dipesan")
+    else:
+        print(f"Tanggal {target} tidak tersedia untuk pemesanan")
+
+
+if __name__ == "__main__":
+    main()
