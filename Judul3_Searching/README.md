@@ -8,7 +8,7 @@ Source Code:
 <img width="1402" height="2230" alt="code judul 3" src="https://github.com/user-attachments/assets/6f1cbb4d-86aa-4eb8-bfe8-a2a4ab613e0c" />
 
 Penjelasan Source Code:
-Baris 1: Mendefinisikan fungsi binary_search untuk mencari tanggal dalam data yang sudah terurut.
+Baris 1: Mendefinisikan fungsi binary search untuk mencari tanggal dalam data yang sudah terurut.
 Baris 2: Menginisialisasi batas kiri pencarian.
 Baris 3: Menginisialisasi batas kanan pencarian.
 Baris 4: Menginisialisasi posisi hasil pencarian dengan nilai -1 sebagai tanda belum ditemukan.
@@ -19,14 +19,14 @@ Baris 8-10: Mengecek apakah tanggal tengah sama dengan target, jika sama maka po
 Baris 11-13: Jika tanggal tengah lebih kecil dari target, maka pencarian dilanjutkan ke bagian kanan.
 Baris 14-16: Jika tanggal tengah lebih besar dari target, maka pencarian dilanjutkan ke bagian kiri.
 Baris 17: Mengembalikan hasil posisi tanggal yang ditemukan.
-Baris 20: Mendefinisikan fungsi utama program main().
+Baris 20: Mendefinisikan fungsi utama program main.
 Baris 21-25: Menangani input jumlah tanggal dan mengantisipasi jika input bukan angka.
 Baris 26: Membuat list kosong untuk menyimpan data tanggal.
 Baris 27: Menampilkan instruksi input tanggal.
 Baris 28-35: Melakukan perulangan untuk memasukkan tanggal sebanyak jumlah data yang ditentukan dengan validasi input.
 Baris 36: Menampilkan daftar tanggal yang tersedia.
 Baris 37-42: Meminta input tanggal yang ingin dicek dengan validasi agar hanya menerima angka.
-Baris 43: Memanggil fungsi binary_search untuk mencari tanggal dalam data.
+Baris 43: Memanggil fungsi binary search untuk mencari tanggal dalam data.
 Baris 44-47: Menampilkan hasil pencarian, jika ditemukan maka tiket tersedia, jika tidak maka tiket tidak tersedia.
 Baris 50-51: Menjalankan fungsi utama ketika program dieksekusi langsung.
 
