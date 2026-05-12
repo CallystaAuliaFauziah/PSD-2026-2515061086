@@ -39,3 +39,8 @@ Output Akhir:
 <img width="730" height="331" alt="Output akhir" src="https://github.com/user-attachments/assets/e7cebc4d-1cd8-4904-955e-34439006d313" />
 
 Link Youtube Video Presentasi:
+https://youtu.be/ajHd3NwsKEM
+
+Tugas Tulis Tangan:
+<img width="1048" height="1600" alt="Tugas Tultang PSD J3" src="https://github.com/user-attachments/assets/06b34ef1-ffba-4d7d-be2b-de6f87d144f0" />
+
