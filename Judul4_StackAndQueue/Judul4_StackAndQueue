@@ -80,7 +80,7 @@ def main():
         elif pilih == 4:
             reservasi.display()
         elif pilih == 5:
-            print("Terimakasih telah menggunakan sistem reservasi ruang belajar")
+            print("Terimakasih telah menggunakan program reservasi ruang belajar")
             break
         else:
             print("Pilihan tidak valid, silahkan pilih ulang!")
