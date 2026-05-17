@@ -57,21 +57,21 @@ def main():
     while True:
         print("\n=== ANTRIAN RESERVASI RUANG BELAJAR ===")
         print("1. Melakukan Reservasi Ruang Belajar")
-        print("2. Selesai Menggunakan Ruang Belajar")
+        print("2. Menggunakan Ruang Belajar")
         print("3. Melihat Antrian Paling Depan")
         print("4. Menampilkan Semua Antrian")
-        print("5. Keluar Dari Sistem")
+        print("5. Keluar Dari Program")
         try:
             pilih = int(input("Masukkan pilihan: "))
         except ValueError:
-            print("Input harus nama yang berupa huruf, tidak boleh angka!")
+            print("Pilihan tidak valid, silakan pilih menu yang tersedia!")
             continue
         if pilih == 1:
-            try:
                 nama = input("Masukkan nama mahasiswa: ")
-                reservasi.enqueue(nama)
-            except ValueError:
-                print("Input harus nama yang berupa huruf, tidak boleh angka!")
+                if nama.isalpha():
+                    reservasi.enqueue(nama)
+                else:
+                 print("Input harus nama yang berupa huruf, tidak boleh angka!")
         elif pilih == 2:
             reservasi.dequeue()
         elif pilih == 3:
