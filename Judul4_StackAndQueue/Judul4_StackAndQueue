@@ -27,7 +27,7 @@ class QueueReservasi:
         if self.is_empty():
             print("Antrian reservasi kosong")
             return
-        print(f"{self.queue[self.front]} selesai menggunakan ruang belajar")
+        print(f"{self.queue[self.front]} memasuki ruang belajar")
         if self.front == self.rear:
             self.front = -1
             self.rear = -1
@@ -51,7 +51,6 @@ class QueueReservasi:
             if i == self.rear:
                 break
             i = (i + 1) % self.MAX
-
 
 def main():
     reservasi = QueueReservasi()
