@@ -112,7 +112,6 @@ def main():
         elif pilih == 2:
             nama = input("Masukkan nama balita yang dicari: ")
             hasil = bst.search(nama)
-
             if hasil:
                 print("Ditemukan:", hasil.nama, "-", hasil.tinggi, "cm")
             else:
