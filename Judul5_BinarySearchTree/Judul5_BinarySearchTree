@@ -81,7 +81,6 @@ class BSTBalita:
             return 0
         return root.tinggi + self.sum_nodes(root.left) + self.sum_nodes(root.right)
 
-
 def main():
     bst = BSTBalita()
     pilih = 0
