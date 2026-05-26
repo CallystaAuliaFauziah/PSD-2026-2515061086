@@ -38,7 +38,7 @@ Baris 25: Membuat fungsi search_nama() untuk mencari data balita berdasarkan nam
 
 Baris 26-27: Mengecek apakah root kosong. Jika kosong maka data dianggap tidak ditemukan.
 
-Baris 28-29: Membandingkan nama yang dicari dengan nama pada node. Fungsi lower() digunakan agar huruf besar dan kecil tetap dianggap sama.
+Baris 28-29: Membandingkan nama yang dicari dengan nama pada node dengan fungsi lower() yang digunakan agar huruf besar dan kecil tetap dianggap sama.
 
 Baris 30: Melakukan pencarian pada subtree kiri lalu menyimpan hasilnya ke variabel kiri.
 
@@ -155,6 +155,10 @@ Baris 135-138: Menampilkan data balita dengan tinggi badan paling tinggi menggun
 Baris 139-140: Menampilkan jumlah seluruh data balita menggunakan fungsi count_nodes().
 
 Baris 141-142: Menampilkan total seluruh tinggi badan balita menggunakan fungsi sum_nodes().
+
+Output:
+
+output awal:
 
 Baris 143-145: Mengecek apakah pengguna memilih menu keluar, lalu program menampilkan pesan selesai dan menghentikan perulangan.
 
