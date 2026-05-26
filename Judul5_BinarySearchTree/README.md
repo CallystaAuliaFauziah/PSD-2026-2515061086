@@ -6,7 +6,7 @@ Sistem Pendataan Tinggi Badan Balita Menggunakan Binary Search Tree
 
 <p style="text-align: justify;">
 Sistem ini dibuat untuk menyimpan dan mengelola data tinggi badan balita. Data yang dimasukkan berupa nama balita dan tinggi badannya. Pengelolaan data menggunakan struktur Binary Search Tree (BST), di mana data dengan nilai lebih kecil akan ditempatkan di sisi kiri, sedangkan data dengan nilai lebih besar ditempatkan di sisi kanan. Sistem ini memiliki beberapa fitur, yaitu menambahkan data balita, mencari data berdasarkan nama, menampilkan data berdasarkan urutan tinggi dari terendah ke tertinggi, serta menampilkan data berdasarkan urutan proses awal sampai akhir dan dari akhir ke awal. Selain itu, sistem juga dapat menampilkan balita dengan tinggi badan terendah dan tertinggi, serta menghitung jumlah data yang sudah dimasukkan. Penggunaan Binary Search Tree membuat data menjadi lebih teratur dan proses pengolahan seperti pencarian dan penampilan data dapat dilakukan dengan lebih mudah tanpa perlu pengurutan manual.
-<p/>
+</p>
 
 Source Code:
 
@@ -16,117 +16,189 @@ Penjelasan Source Code:
 
 Baris 1: Membuat class Node yang digunakan untuk menyimpan data pada setiap node di Binary Search Tree.
 
-Baris 2-6: Membuat fungsi init() untuk mengatur data awal pada node berupa tinggi badan, nama balita, serta node kiri dan kanan.
+Baris 2: Membuat fungsi init() yang akan dijalankan saat object node dibuat.
 
-Baris 8: Membuat class BSTBalita sebagai class utama untuk menjalankan proses Binary Search Tree.
+Baris 3: Menyimpan data tinggi badan balita ke dalam atribut tinggi.
 
-Baris 9-10: Membuat fungsi init() untuk memberi nilai awal None pada root yang menandakan tree masih kosong.
+Baris 4: Menyimpan data nama balita ke dalam atribut nama.
 
-Baris 12: Membuat fungsi insert_node() yang digunakan untuk menambahkan data baru ke dalam Binary Search Tree.
+Baris 5: Memberikan nilai awal None pada node kiri.
 
-Baris 13-14: Mengecek apakah root kosong. Jika kosong maka program akan membuat node baru berisi data balita.
+Baris 6: Memberikan nilai awal None pada node kanan.
 
-Baris 15-16: Jika tinggi badan lebih kecil dari root maka data dimasukkan ke bagian kiri tree.
+Baris 8: Membuat class BSTBalita sebagai class utama Binary Search Tree.
 
-Baris 17-18: Jika tinggi badan lebih besar dari root maka data dimasukkan ke bagian kanan tree.
+Baris 9: Membuat fungsi init() pada class BSTBalita.
 
-Baris 20: Mengembalikan root setelah proses penambahan data selesai.
+Baris 10: Memberikan nilai awal None pada root yang menandakan bahwa tree masih kosong.
 
-Baris 22-23: Membuat fungsi insert() untuk memanggil fungsi insert_node() agar data dapat dimasukkan ke BST.
+Baris 12: Membuat fungsi insert_node() untuk menambahkan data baru ke dalam Binary Search Tree.
 
-Baris 25: Membuat fungsi search_nama() untuk mencari data balita berdasarkan nama.
+Baris 13: Mengecek apakah root kosong.
 
-Baris 26-27: Mengecek apakah root kosong. Jika kosong maka data dianggap tidak ditemukan.
+Baris 14: Jika root kosong maka program membuat node baru berisi data tinggi badan dan nama balita.
 
-Baris 28-29: Membandingkan nama yang dicari dengan nama pada node dengan fungsi lower() yang digunakan agar huruf besar dan kecil tetap dianggap sama.
+Baris 15: Mengecek apakah tinggi badan lebih kecil dari root.
 
-Baris 30: Melakukan pencarian pada subtree kiri lalu menyimpan hasilnya ke variabel kiri.
+Baris 16: Jika lebih kecil maka data dimasukkan ke subtree kiri menggunakan rekursif.
 
-Baris 31-32: Jika data ditemukan di subtree kiri maka hasil langsung dikembalikan.
+Baris 17: Mengecek apakah tinggi badan lebih besar dari root.
 
-Baris 33: Jika belum ditemukan maka pencarian dilanjutkan ke subtree kanan.
+Baris 18: Jika lebih besar maka data dimasukkan ke subtree kanan menggunakan rekursif.
 
-Baris 35-36: Membuat fungsi search() untuk menjalankan fungsi pencarian mulai dari root utama.
+Baris 19: Mengembalikan root setelah proses penambahan data selesai.
 
-Baris 38: Membuat fungsi inorder() untuk menampilkan data berdasarkan urutan tinggi badan dari terendah ke tertinggi.
+Baris 21: Membuat fungsi insert().
 
-Baris 39-40: Mengecek apakah root kosong. Jika kosong maka fungsi berhenti.
+Baris 22: Menjalankan fungsi insert_node() untuk menambahkan data ke BST.
 
-Baris 41: Menelusuri subtree kiri terlebih dahulu.
+Baris 24: Membuat fungsi search_nama() untuk mencari data berdasarkan nama balita.
 
-Baris 42: Menampilkan nama balita dan tinggi badan.
+Baris 25: Mengecek apakah root kosong.
 
-Baris 43: Menelusuri subtree kanan.
+Baris 26: Jika kosong maka fungsi mengembalikan None.
 
-Baris 45: Membuat fungsi preorder() untuk menampilkan data dimulai dari root terlebih dahulu.
+Baris 27: Membandingkan nama input dengan nama pada node menggunakan lower() agar huruf besar dan kecil dianggap sama.
 
-Baris 46-47: Mengecek apakah root kosong. Jika kosong maka fungsi dihentikan.
+Baris 28: Jika nama ditemukan maka node dikembalikan.
 
-Baris 48: Menampilkan data pada root.
+Baris 29: Melakukan pencarian pada subtree kiri dan hasilnya disimpan ke variabel kiri.
 
-Baris 49-50: Menelusuri subtree kiri lalu subtree kanan.
+Baris 30: Mengecek apakah data ditemukan di subtree kiri.
 
-Baris 52: Membuat fungsi postorder() untuk menampilkan data mulai dari subtree terlebih dahulu kemudian root.
+Baris 31: Jika ditemukan maka hasil langsung dikembalikan.
 
-Baris 53-54: Mengecek apakah root kosong. Jika kosong maka fungsi dihentikan.
+Baris 32: Jika belum ditemukan maka pencarian dilanjutkan ke subtree kanan.
 
-Baris 55-56: Menelusuri subtree kiri dan subtree kanan.
+Baris 34: Membuat fungsi search().
 
-Baris 57: Menampilkan data root paling akhir.
+Baris 35: Menjalankan fungsi search_nama() mulai dari root utama.
 
-Baris 59: Membuat fungsi find_min() untuk mencari data balita dengan tinggi badan paling rendah.
+Baris 37: Membuat fungsi inorder() untuk menampilkan data berdasarkan urutan tinggi badan dari terendah ke tertinggi.
 
-Baris 60-61: Mengecek apakah tree kosong. Jika kosong maka fungsi mengembalikan None.
+Baris 38: Mengecek apakah root kosong.
 
-Baris 62: Membuat variabel current untuk menyimpan posisi node saat ini.
+Baris 39: Jika kosong maka fungsi dihentikan menggunakan return.
 
-Baris 63-64: Melakukan perulangan menuju node paling kiri karena nilai terkecil pada BST berada di sebelah kiri.
+Baris 40: Menelusuri subtree kiri terlebih dahulu.
 
-Baris 65: Mengembalikan node dengan tinggi badan paling rendah.
+Baris 41: Menampilkan nama balita dan tinggi badannya.
 
-Baris 67: Membuat fungsi find_max() untuk mencari data balita dengan tinggi badan paling tinggi.
+Baris 42: Menelusuri subtree kanan.
 
-Baris 68-69: Mengecek apakah tree kosong. Jika kosong maka fungsi mengembalikan None.
+Baris 44: Membuat fungsi preorder().
 
-Baris 70: Membuat variabel current untuk menyimpan posisi node saat ini.
+Baris 45: Mengecek apakah root kosong.
 
-Baris 71-72: Melakukan perulangan menuju node paling kanan karena nilai terbesar pada BST berada di sebelah kanan.
+Baris 46: Jika kosong maka fungsi dihentikan.
 
-Baris 73: Mengembalikan node dengan tinggi badan paling tinggi.
+Baris 47: Menampilkan data pada root terlebih dahulu.
 
-Baris 75: Membuat fungsi count_nodes() untuk menghitung jumlah seluruh data balita.
+Baris 48: Menelusuri subtree kiri.
 
-Baris 76-77: Mengecek apakah root kosong. Jika kosong maka fungsi mengembalikan nilai 0.
+Baris 49: Menelusuri subtree kanan.
 
-Baris 78: Menghitung jumlah node pada subtree kiri dan kanan secara rekursif lalu ditambah 1 untuk root.
+Baris 51: Membuat fungsi postorder().
 
-Baris 80: Membuat fungsi sum_nodes() untuk menghitung total seluruh tinggi badan balita.
+Baris 52: Mengecek apakah root kosong.
 
-Baris 81-82: Mengecek apakah root kosong. Jika kosong maka fungsi mengembalikan nilai 0.
+Baris 53: Jika kosong maka fungsi dihentikan.
 
-Baris 83: Menjumlahkan seluruh tinggi badan balita dari subtree kiri, subtree kanan, dan root.
+Baris 54: Menelusuri subtree kiri.
 
-Baris 85: Membuat fungsi main() sebagai pusat jalannya program.
+Baris 55: Menelusuri subtree kanan.
 
-Baris 86: Membuat objek bst dari class BSTBalita.
+Baris 56: Menampilkan data root paling akhir.
 
-Baris 87: Membuat variabel pilih dengan nilai awal 0.
+Baris 58: Membuat fungsi find_min() untuk mencari tinggi badan paling rendah.
 
-Baris 88: Membuat perulangan while agar program terus berjalan sampai pengguna memilih menu keluar.
+Baris 59: Mengecek apakah tree kosong.
 
-Baris 89-99: Menampilkan daftar menu pada sistem pendataan tinggi badan balita.
+Baris 60: Jika kosong maka fungsi mengembalikan None.
 
-Baris 100: Memulai blok try untuk menangani kesalahan input.
+Baris 61: Membuat variabel current untuk menyimpan posisi node saat ini.
 
-Baris 101: Meminta pengguna memasukkan pilihan menu lalu mengubah input menjadi tipe integer.
+Baris 62: Membuat perulangan selama node kiri masih ada.
 
-Baris 102-104: Menangani kesalahan jika pengguna memasukkan selain angka lalu program kembali ke menu utama.
+Baris 63: Menggeser posisi current ke node kiri.
 
-Baris 105: Mengecek apakah pengguna memilih menu nomor 1.
+Baris 64: Mengembalikan node dengan nilai paling kecil.
 
-Baris 106-107: Meminta input nama balita dan tinggi badan.
+Baris 66: Membuat fungsi find_max() untuk mencari tinggi badan paling tinggi.
 
-Baris 108: Menambahkan data balita ke Binary Search Tree menggunakan fungsi insert().
+Baris 67: Mengecek apakah tree kosong.
+
+Baris 68: Jika kosong maka fungsi mengembalikan None.
+
+Baris 69: Membuat variabel current untuk menyimpan posisi node saat ini.
+
+Baris 70: Membuat perulangan selama node kanan masih ada.
+
+Baris 71: Menggeser posisi current ke node kanan.
+
+Baris 72: Mengembalikan node dengan nilai paling besar.
+
+Baris 74: Membuat fungsi count_nodes() untuk menghitung jumlah seluruh data balita.
+
+Baris 75: Mengecek apakah root kosong.
+
+Baris 76: Jika kosong maka fungsi mengembalikan nilai 0.
+
+Baris 77: Menghitung jumlah node pada subtree kiri dan kanan lalu ditambah 1 untuk root.
+
+Baris 79: Membuat fungsi sum_nodes() untuk menghitung total seluruh tinggi badan balita.
+
+Baris 80: Mengecek apakah root kosong.
+
+Baris 81: Jika kosong maka fungsi mengembalikan nilai 0.
+
+Baris 82: Menjumlahkan seluruh tinggi badan pada subtree kiri, subtree kanan, dan root.
+
+Baris 84: Membuat fungsi main() sebagai program utama.
+
+Baris 85: Membuat object bst dari class BSTBalita.
+
+Baris 86: Membuat variabel pilih dengan nilai awal 0.
+
+Baris 87: Membuat perulangan while agar program terus berjalan sampai pengguna memilih menu keluar.
+
+Baris 88: Menampilkan judul sistem.
+
+Baris 89: Menampilkan menu tambah data balita.
+
+Baris 90: Menampilkan menu cari data balita berdasarkan nama.
+
+Baris 91: Menampilkan menu data berdasarkan urutan tinggi badan.
+
+Baris 92: Menampilkan menu data dari pertama ke terakhir.
+
+Baris 93: Menampilkan menu data dari terakhir ke pertama.
+
+Baris 94: Menampilkan menu balita terpendek.
+
+Baris 95: Menampilkan menu balita tertinggi.
+
+Baris 96: Menampilkan menu jumlah data balita.
+
+Baris 97: Menampilkan menu total tinggi seluruh balita.
+
+Baris 98: Menampilkan menu keluar dari sistem.
+
+Baris 99: Memulai blok try untuk menangani kesalahan input.
+
+Baris 100: Meminta pengguna memasukkan pilihan menu.
+
+Baris 101-103: Menangani kesalahan jika input bukan angka lalu program kembali ke menu utama.
+
+Baris 104: Mengecek apakah pengguna memilih menu nomor 1.
+
+Baris 105: Memulai blok try untuk menangani kesalahan input data.
+
+Baris 106: Meminta input nama balita.
+
+Baris 107: Meminta input tinggi badan balita.
+
+Baris 108: Menambahkan data balita ke dalam BST menggunakan fungsi insert().
 
 Baris 109: Menampilkan pesan bahwa data berhasil ditambahkan.
 
@@ -136,32 +208,109 @@ Baris 112: Mengecek apakah pengguna memilih menu nomor 2.
 
 Baris 113: Meminta input nama balita yang ingin dicari.
 
-Baris 114: Menjalankan fungsi pencarian data menggunakan search().
+Baris 114: Menjalankan fungsi search() untuk mencari data balita.
 
-Baris 115-116: Jika data ditemukan maka program menampilkan nama dan tinggi badan balita.
+Baris 115: Mengecek apakah data ditemukan.
 
-Baris 117-118: Jika data tidak ditemukan maka program menampilkan pesan gagal.
+Baris 116: Jika data ditemukan maka program menampilkan nama dan tinggi badan balita.
 
-Baris 119-122: Menampilkan seluruh data balita berdasarkan urutan tinggi badan dari terendah ke tertinggi menggunakan traversal inorder.
+Baris 117-118: Jika data tidak ditemukan maka program menampilkan pesan bahwa data tidak ditemukan.
 
-Baris 123-126: Menampilkan data berdasarkan urutan dari data pertama ke terakhir menggunakan traversal preorder.
+Baris 119: Mengecek apakah pengguna memilih menu nomor 3.
 
-Baris 127-130: Menampilkan data berdasarkan urutan dari data terakhir ke pertama menggunakan traversal postorder.
+Baris 120: Menampilkan judul data berdasarkan urutan tinggi badan.
 
-Baris 131-134: Menampilkan data balita dengan tinggi badan paling rendah menggunakan fungsi find_min().
+Baris 121: Menjalankan fungsi inorder().
 
-Baris 135-138: Menampilkan data balita dengan tinggi badan paling tinggi menggunakan fungsi find_max().
+Baris 122: Membuat baris baru menggunakan print().
 
-Baris 139-140: Menampilkan jumlah seluruh data balita menggunakan fungsi count_nodes().
+Baris 123: Mengecek apakah pengguna memilih menu nomor 4.
 
-Baris 141-142: Menampilkan total seluruh tinggi badan balita menggunakan fungsi sum_nodes().
+Baris 124: Menampilkan judul data dari pertama ke terakhir.
+
+Baris 125: Menjalankan fungsi preorder().
+
+Baris 126: Membuat baris baru menggunakan print().
+
+Baris 127: Mengecek apakah pengguna memilih menu nomor 5.
+
+Baris 128: Menampilkan judul data dari terakhir ke pertama.
+
+Baris 129: Menjalankan fungsi postorder().
+
+Baris 130: Membuat baris baru menggunakan print().
+
+Baris 131: Mengecek apakah pengguna memilih menu nomor 6.
+
+Baris 132: Menjalankan fungsi find_min() lalu menyimpan hasilnya ke variabel min_node.
+
+Baris 133: Mengecek apakah data minimum ditemukan.
+
+Baris 134: Menampilkan data balita dengan tinggi badan paling rendah.
+
+Baris 135: Mengecek apakah pengguna memilih menu nomor 7.
+
+Baris 136: Menjalankan fungsi find_max() lalu menyimpan hasilnya ke variabel max_node.
+
+Baris 137: Mengecek apakah data maksimum ditemukan.
+
+Baris 138: Menampilkan data balita dengan tinggi badan paling tinggi.
+
+Baris 139: Mengecek apakah pengguna memilih menu nomor 8.
+
+Baris 140: Menampilkan jumlah seluruh data balita menggunakan fungsi count_nodes().
+
+Baris 141: Mengecek apakah pengguna memilih menu nomor 9.
+
+Baris 142: Menampilkan total seluruh tinggi badan balita menggunakan fungsi sum_nodes().
+
+Baris 143: Mengecek apakah pengguna memilih menu nomor 10.
+
+Baris 144: Menampilkan pesan bahwa program selesai dijalankan.
+
+Baris 145: Menghentikan perulangan menggunakan break.
+
+Baris 146: Menjalankan kondisi jika pilihan menu tidak tersedia.
+
+Baris 147: Menampilkan pesan bahwa pilihan tidak valid.
+
+Baris 149: Mengecek apakah file dijalankan sebagai program utama.
+
+Baris 150: Menjalankan fungsi main().
 
 Output:
 
-output awal:
+Output Awal:
+<img width="640" height="296" alt="Screenshot 2026-05-26 142512" src="https://github.com/user-attachments/assets/c2a58231-2804-4d0a-b0e8-989fad7d6edd" />
 
-Baris 143-145: Mengecek apakah pengguna memilih menu keluar, lalu program menampilkan pesan selesai dan menghentikan perulangan.
+Output Setelah Menu 1 Dijalankan:
+<img width="655" height="621" alt="Screenshot 2026-05-26 143721" src="https://github.com/user-attachments/assets/b322af0f-91e9-4ab9-b9ec-d8d7e12973f7" />
 
-Baris 146-147: Menampilkan pesan jika pilihan menu yang dimasukkan tidak tersedia.
+Output Setelah Menu 2 Dijalankan:
+<img width="647" height="589" alt="Screenshot 2026-05-26 143529" src="https://github.com/user-attachments/assets/799d7240-82ee-4af8-9d79-eb5a870df0f8" />
 
-Baris 149-150: Mengecek apakah file dijalankan sebagai program utama. Jika benar maka fungsi main() akan dijalankan.
+Output Setelah Menu 3 Dijalankan:
+<img width="713" height="590" alt="Screenshot 2026-05-26 142915" src="https://github.com/user-attachments/assets/801670d1-334a-4b46-95cd-32b296fa0798" />
+
+Output Setelah Menu 4 Dijalankan:
+<img width="706" height="596" alt="Screenshot 2026-05-26 142932" src="https://github.com/user-attachments/assets/6909f252-8650-4e84-9b4f-4d4c293d876b" />
+
+Output Setelah Menu 5 Dijalankan:
+<img width="624" height="591" alt="Screenshot 2026-05-26 142948" src="https://github.com/user-attachments/assets/3d971808-deab-426b-a3da-038a6ca13533" />
+
+Output Setelah Menu 6 Dijalankan:
+<img width="684" height="566" alt="Screenshot 2026-05-26 143020" src="https://github.com/user-attachments/assets/34940580-97b5-43a8-9aac-98bdca712506" />
+
+Output Setelah Menu 7 Dijalankan:
+<img width="674" height="574" alt="Screenshot 2026-05-26 143034" src="https://github.com/user-attachments/assets/53cc7453-bd34-4580-8ee0-3e9aa25df00f" />
+
+Output Setelah Menu 8 Dijalankan:
+<img width="651" height="572" alt="Screenshot 2026-05-26 143050" src="https://github.com/user-attachments/assets/b6fa9f85-2b6c-422f-8dd9-ccf16539b674" />
+
+Output Setelah Menu 9 Dijalankan:
+<img width="683" height="567" alt="Screenshot 2026-05-26 143107" src="https://github.com/user-attachments/assets/0eccf680-9b9c-467f-ab41-748736a11c7c" />
+
+Output Setelah Menu 10  Dijalankan:
+<img width="631" height="295" alt="Screenshot 2026-05-26 143836" src="https://github.com/user-attachments/assets/1a184adc-7319-4837-a878-b23236dc4752" />
+
+Link Youtube Video Presentasi:
