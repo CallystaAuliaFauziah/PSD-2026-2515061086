@@ -284,42 +284,43 @@ Output Awal:
 
 <img width="640" height="296" alt="Screenshot 2026-05-26 142512" src="https://github.com/user-attachments/assets/c2a58231-2804-4d0a-b0e8-989fad7d6edd" />
 
-Output Setelah Menu 1 Dijalankan:
+Output Ketika Menu 1 Dijalankan:
 
 <img width="655" height="621" alt="Screenshot 2026-05-26 143721" src="https://github.com/user-attachments/assets/b322af0f-91e9-4ab9-b9ec-d8d7e12973f7" />
 
-Output Setelah Menu 2 Dijalankan:
+Output Ketika Menu 2 Dijalankan:
 
 <img width="647" height="589" alt="Screenshot 2026-05-26 143529" src="https://github.com/user-attachments/assets/799d7240-82ee-4af8-9d79-eb5a870df0f8" />
 
-Output Setelah Menu 3 Dijalankan:
+Output Ketika Menu 3 Dijalankan:
 
 <img width="713" height="590" alt="Screenshot 2026-05-26 142915" src="https://github.com/user-attachments/assets/801670d1-334a-4b46-95cd-32b296fa0798" />
 
-Output Setelah Menu 4 Dijalankan:
+Output Ketika Menu 4 Dijalankan:
+
 <img width="706" height="596" alt="Screenshot 2026-05-26 142932" src="https://github.com/user-attachments/assets/6909f252-8650-4e84-9b4f-4d4c293d876b" />
 
-Output Setelah Menu 5 Dijalankan:
+Output Ketika Menu 5 Dijalankan:
 
 <img width="624" height="591" alt="Screenshot 2026-05-26 142948" src="https://github.com/user-attachments/assets/3d971808-deab-426b-a3da-038a6ca13533" />
 
-Output Setelah Menu 6 Dijalankan:
+Output Ketika Menu 6 Dijalankan:
 
 <img width="684" height="566" alt="Screenshot 2026-05-26 143020" src="https://github.com/user-attachments/assets/34940580-97b5-43a8-9aac-98bdca712506" />
 
-Output Setelah Menu 7 Dijalankan:
+Output Ketika Menu 7 Dijalankan:
 
 <img width="674" height="574" alt="Screenshot 2026-05-26 143034" src="https://github.com/user-attachments/assets/53cc7453-bd34-4580-8ee0-3e9aa25df00f" />
 
-Output Setelah Menu 8 Dijalankan:
+Output Ketika Menu 8 Dijalankan:
 
 <img width="651" height="572" alt="Screenshot 2026-05-26 143050" src="https://github.com/user-attachments/assets/b6fa9f85-2b6c-422f-8dd9-ccf16539b674" />
 
-Output Setelah Menu 9 Dijalankan:
+Output Ketika Menu 9 Dijalankan:
 
 <img width="683" height="567" alt="Screenshot 2026-05-26 143107" src="https://github.com/user-attachments/assets/0eccf680-9b9c-467f-ab41-748736a11c7c" />
 
-Output Setelah Menu 10  Dijalankan:
+Output Ketika Menu 10  Dijalankan:
 
 <img width="631" height="295" alt="Screenshot 2026-05-26 143836" src="https://github.com/user-attachments/assets/1a184adc-7319-4837-a878-b23236dc4752" />
 
