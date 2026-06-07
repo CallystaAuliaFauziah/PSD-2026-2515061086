@@ -215,3 +215,31 @@ Baris 114: Menampilkan pesan bahwa pilihan tidak valid.
 Baris 116: Mengecek apakah file dijalankan sebagai program utama.
 
 Baris 117: Menjalankan fungsi main().
+
+Output:
+
+Output Awal:
+
+<img width="438" height="172" alt="Screenshot 2026-06-07 214618" src="https://github.com/user-attachments/assets/dcd8540b-c3ce-44d2-93cc-b96b15349dcc" />
+
+Output Ketika Menu 1 Dijalankan:
+
+<img width="532" height="258" alt="Screenshot 2026-06-07 214701" src="https://github.com/user-attachments/assets/53e48de9-ac2b-49a9-b122-ae0589826d7c" />
+
+Output Ketika Menu 2 Dijalankan:
+
+<img width="431" height="267" alt="Screenshot 2026-06-07 214733" src="https://github.com/user-attachments/assets/cd47b703-d04f-4a83-847c-3e38b2066fe3" />
+
+Output Ketika Menu 3 Dijalankan:
+
+<img width="432" height="223" alt="Screenshot 2026-06-07 214802" src="https://github.com/user-attachments/assets/875ea40e-5963-4f48-ae73-f355b4c7c05b" />
+
+Output Ketika Menu 4 Dijalankan:
+
+<img width="427" height="425" alt="Screenshot 2026-06-07 214844" src="https://github.com/user-attachments/assets/f7be4f7b-de32-46f9-ba25-6f7aac89d3a7" />
+
+Output Ketika Menu 5 Dijalankan:
+
+<img width="638" height="177" alt="Screenshot 2026-06-07 214903" src="https://github.com/user-attachments/assets/cbea2901-c296-488d-b259-934bd9246e2d" />
+
+Link Youtube Video Presentasi:
