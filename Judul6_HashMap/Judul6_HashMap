@@ -1,0 +1,117 @@
+class Node:
+    def __init__(self, kode_barang, nama_barang):
+        self.kode_barang = kode_barang
+        self.nama_barang = nama_barang
+        self.next = None
+
+class InventarisLaboratorium:
+    def __init__(self, size=10):
+        self.SIZE = size
+        self.table = [None] * self.SIZE
+
+    def hash_function(self, kode_barang):
+        return (kode_barang % self.SIZE + self.SIZE) % self.SIZE
+
+    def tambah_barang(self, kode_barang, nama_barang):
+        index = self.hash_function(kode_barang)
+        current = self.table[index]
+        while current is not None:
+            if current.kode_barang == kode_barang:
+                current.nama_barang = nama_barang
+                print("Data barang berhasil diperbarui.")
+                return
+            current = current.next
+        new_node = Node(kode_barang, nama_barang)
+        new_node.next = self.table[index]
+        self.table[index] = new_node
+        print(f"\n Barang dengan kode {kode_barang} dan nama {nama_barang} berhasil ditambahkan.")
+
+    def cari_barang(self, kode_barang):
+        index = self.hash_function(kode_barang)
+        current = self.table[index]
+        while current is not None:
+            if current.kode_barang == kode_barang:
+                return current
+            current = current.next
+        return None
+
+    def hapus_barang(self, kode_barang):
+        index = self.hash_function(kode_barang)
+        current = self.table[index]
+        prev = None
+        while current is not None:
+            if current.kode_barang == kode_barang:
+                if prev is None:
+                    self.table[index] = current.next
+                else:
+                    prev.next = current.next
+                print(f"\n Barang dengan kode {kode_barang} berhasil dihapus.")
+                return True
+            prev = current
+            current = current.next
+        print(f"\n Barang dengan kode {kode_barang} tidak ditemukan.")
+        return False
+
+    def tampilkan_inventaris(self):
+        print("\n=== SISTEM INVENTARIS BARANG LABORATORIUM ===")
+        for i in range(self.SIZE):
+            print(f"Bucket {i}: ", end="")
+            current = self.table[i]
+            while current is not None:
+                print(
+                    f"[{current.kode_barang} - {current.nama_barang}] -> ",
+                    end=""
+                )
+                current = current.next
+            print("NULL")
+
+def deteksi_error(pesan):
+    while True:
+        try:
+            return int(input(pesan))
+        except ValueError:
+            print("Input tidak valid! Silahkan inputkan ulang.")
+
+def main():
+    inventaris = InventarisLaboratorium()
+
+    while True:
+        print("\n=== SISTEM INVENTARIS BARANG LABORATORIUM ===")
+        print("1. Tambah Barang")
+        print("2. Cari Barang")
+        print("3. Hapus Barang")
+        print("4. Tampilkan Barang Inventaris")
+        print("5. Keluar")
+        pilihan = input("Pilih menu: ")
+        
+        if pilihan == "1":
+            kode = deteksi_error("Masukkan kode barang: ")
+            nama = input("Masukkan nama barang: ")
+            inventaris.tambah_barang(kode, nama)
+            
+        elif pilihan == "2":
+            kode = deteksi_error("Masukkan kode barang yang dicari: ")
+            hasil = inventaris.cari_barang(kode)
+            if hasil is not None:
+                print("\nData Barang Ditemukan")
+                print(f"Kode Barang : {hasil.kode_barang}")
+                print(f"Nama Barang : {hasil.nama_barang}")
+            else:
+                print("Barang tidak ditemukan.")
+
+        elif pilihan == "3":
+            kode = deteksi_error("Masukkan kode barang yang akan dihapus: ")
+            inventaris.hapus_barang(kode)
+
+        elif pilihan == "4":
+            inventaris.tampilkan_inventaris()
+
+        elif pilihan == "5":
+            print("Terimakasih telah menggunakan sistem inventaris barang laboratorium.")
+            break
+
+        else:
+            print("Pilihan tidak valid, silahkan pilih ulang!")
+
+if __name__ == "__main__":
+    main()
